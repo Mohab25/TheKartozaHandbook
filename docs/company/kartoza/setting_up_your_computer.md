@@ -51,7 +51,12 @@ All staff should in addition be issued with:
 
 * **A USB headset.** USB headsets include their own DSP (Digital Sound Processor) and will generally have a better sound quality than an analogue headset.
 * **An external disk for backups.** This should again be encrypted. The disk should be 4x the size of the hard disk. Use Déjà Dup Backups to run automatic backups on a nightly basis.
-* **A Yubikey.** This will be used to authenticate to Google Apps for Domains (Via Yubikey TOTP), BitWarden, your local PC login (via FIDO2) and other services such as NextCloud.
+* **A kensington lock.** This should be used whenever the laptop is left unattended in a public place (i.e. anywhere other than your home).
+* **A Yubikey.** This will be used to authenticate to Google Apps for Domains (Via Yubikey TOTP), BitWarden, your local PC login (via FIDO2) and other services such as NextCloud. Each staff member should be issued with two of these devices and the second should be stored at home in a safe place in case the first is lost. One of following models are suggested:
+
+![USB A](./img/yubikey-usba.png)
+![USB C](./img/yubikey-usbc.png)
+
 
 ## Base Install Requirements
 
@@ -73,6 +78,28 @@ ykman-gui
 ```
 
 ![FIDO2 Reset](./img/reset-yubikey-fido-keys.png)
+
+## Online Accounts
+
+You need to have online accounts with the following services:
+
+* [GitHub](https://github.com) - then set up your YubiKey as your 2FA [here](https://github.com/settings/two_factor_authentication/configure). As a backup 2FA you should use the GitHub mobile app. Note that using SMS for 2FA is not considered secure.
+
+![GitHub 2FA](img/github-2fa.png)
+
+* [Google](https://myaccount.google.com/). Set up your YubiKey as your 2FA [here](https://myaccount.google.com/two-step-verification/security-keys). As a backup 2FA you should use the Google mobile app. Note that using SMS for 2FA is not considered secure.
+
+![Google 2FA](img/google-2fa.png)
+
+* [Hetzner](https://hetzner.com). If you are a staff member with permission to access Hetzner, set up your YubiKey as your 2FA [here](https://accounts.hetzner.com/tfa). Note that using SMS for 2FA is not considered secure.
+
+![Hetzner 2FA](img/hetzner-2fa.png)
+
+* ERNext. Our admin team will provision an account for you.
+
+* NextCloud. Our admin team will provision an account for you. [NextCloud](https://cloud.kartoza.com/). If you are a staff member with permission to access Hetzner, set up your YubiKey as your 2FA [here](https://cloud.kartoza.com/settings/user/security). Note that using SMS for 2FA is not considered secure.
+
+![NextCloud 2FA](img/nextcloud-2fa.png)
 
 ## Software
 
